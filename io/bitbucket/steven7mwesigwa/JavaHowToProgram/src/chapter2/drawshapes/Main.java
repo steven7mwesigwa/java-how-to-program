@@ -10,7 +10,7 @@ public class Main {
         describeQuestion();
         DrawShape box = new Box();
         DrawShape diamond = new Diamond();
-        System.out.println("\nSOLUTION");
+        System.out.println("\nSOLUTION :");
         System.out.println("\n=================");
         System.out.println("\nDRAW THE BOX");
         System.out.println("\n=================\n");
@@ -23,7 +23,7 @@ public class Main {
 
     /**
      */
-    public static void describeQuestion() {
+    static void describeQuestion() {
         System.out.println("\n\nChapter 2: Introduction to Java Applications; Input/Output and Operators");
         System.out.println("Page: 109");
         System.out.println("QUESTION\n");
