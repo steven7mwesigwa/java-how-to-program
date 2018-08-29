@@ -19,7 +19,7 @@ Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.2+13, mixed mode)
 
 
 
-### Prerequisites
+## Prerequisites
 
 What things you need to install *(the software)* and how to install them
 
@@ -27,9 +27,9 @@ What things you need to install *(the software)* and how to install them
 
 >* **TIP:** Newer versions of *Netbeans*, *Eclipse* or *IntelliJ* allow you to switch between different *"Java Platforms"* on the fly without changing your ***default*** Java Platform.
 
->* i.e For Netbeans users, Apache-Netbeans 9 or later: ``Tools > Java Platforms > Add Platform...``. After adding your desired *Java platform*, Right-click on your Project ``> Properties > Sources > Source/Binary Format: >`` then choose your desired *Java Platform* form the drop down list and SAVE. 
+>* i.e For Netbeans users, Apache-Netbeans 9 or later: ``Tools > Java Platforms > Add Platform...``. After adding your desired *Java platform*, Right-click on your Project ``> Properties > Sources > Source/Binary Format: >`` then choose your desired *Java Platform* from the drop down list and SAVE. 
 
-### <a name="project-list"></a>List of Sub Projects
+## <a name="project-list"></a>List of Sub Projects
 
 * chapter2.drawshapes.Main
 * chapter3.bankaccount.AccountTest
@@ -38,7 +38,7 @@ What things you need to install *(the software)* and how to install them
 * chapter3.create.graphical.user.interfaces.messagedialog.MessageDialog
 
 
-### Installing (Deployment)
+## Installing (Deployment)
 A step by step series of examples that tell you how to get a development env running
 
  **OPTION 1:**
@@ -72,7 +72,7 @@ Follow the steps below to get you up and running:
 
 1. Download the zipped file containing [Oracle JDK v10](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html) to your preferred location.
 	* Then, Unzip / Extract it. i.e
-	> * **NOTE:** Take note of this destination folder. As for me, i will extract it in my *"home directory"*. i.e i will end up with a ``~/jdk-10.0.2_linux-x64_bin`` folder AFTER unzipping. This is where our **JDK_v10** is located. We will need it when compiling with **``Ant build tool``**
+	> * **NOTE:** Take note of this destination folder. As for me, i will extract it in my *"home directory"*. i.e i will end up with a ``~/jdk-10.0.2_linux-x64_bin`` folder AFTER unzipping. This is where our **JDK_v10** is located. We will need it when building with **``Ant build tool``**
 
 	```bash
 	tar -xf jdk-10.0.2_linux-x64_bin.tar.gz
@@ -101,7 +101,7 @@ ant -Dplatforms.JDK_10.home="~/jdk-10.0.2_linux-x64_bin/jdk-10.0.2" jar
 
     * Open ``build.xml`` file from the root of project and add the snippet below BEFORE the `` </project>`` line.
 
-	    * This is done to AVOID a ``java.lang.NoClassDefFoundError:`` error.
+	    [//]: # "* This is done to AVOID a ``java.lang.NoClassDefFoundError:`` error."
 
 	```bash
 	        <classpath>
