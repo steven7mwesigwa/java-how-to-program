@@ -96,20 +96,7 @@ cd java-how-to-program/io/bitbucket/steven7mwesigwa/JavaHowToProgram
 ```bash
 ant -Dplatforms.JDK_10.home="~/jdk-10.0.2_linux-x64_bin/jdk-10.0.2" jar
 ```
-
-* Once our BUILD is SUCCESSFUL, Lets define a ``classpath`` for our built ***.class*** files.
-
-    * Open ``build.xml`` file from the root of project and add the snippet below BEFORE the `` </project>`` line.
-
-	    [//]: # "* This is done to AVOID a ``java.lang.NoClassDefFoundError:`` error."
-
-	```bash
-	        <classpath>
-                 <pathelement location="build/*"/>
-        </classpath>
-	```
-
-* The above is done to AVOID the error below:
+>* **NOTE:** If you don't specify a location of your *Java Platform* while running the above ``ant`` command, you will end up with the error below:
 ```
 The J2SE Platform is not correctly set up.
  Your active platform is: JDK_10, but the corresponding property "platforms.JDK_10.home" is not found in the project's properties files. 
@@ -118,6 +105,22 @@ The J2SE Platform is not correctly set up.
      ant -Duser.properties.file=<path_to_property_file> jar (where you put the property "platforms.JDK_10.home" in a .properties file)
   or ant -Dplatforms.JDK_10.home=<path_to_JDK_home> jar (where no properties file is used)
 ```
+
+* Once our BUILD is SUCCESSFUL, Lets define a ``classpath`` for our built ***.class*** files.
+
+    * Open ``build.xml`` file from the root of project and add the snippet below BEFORE the `` </project>`` line.
+
+
+
+	```bash
+	        <classpath>
+                 <pathelement location="build/*"/>
+        </classpath>
+	```
+
+> **NOTE:** If you don't specify a ``classpath`` for your built JAVA files, you will end up with a ``java.lang.NoClassDefFoundError:`` error."
+
+
 5. CONGRATULATIONS!!. If you have made it this far, we are now ready to play with our sub projects.
 
 *
