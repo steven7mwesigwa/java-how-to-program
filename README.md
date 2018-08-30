@@ -51,6 +51,7 @@ git clone https://github.com/steven7mwesigwa/java-how-to-program.git
 	cd java-how-to-program/io/bitbucket/steven7mwesigwa/JavaHowToProgram/src/
 	```
 3. Check out this link of **[Sub Projects.](#project-list)**
+    * ``Run`` the corresponding ***Solution*** files as required for each ***Question***.
 
  **OPTION 2:**
 
@@ -173,6 +174,17 @@ jdk-10.0.2_linux-x64_bin/jdk-10.0.2/bin/java -cp build/classes chapter3.create.g
 ## Contributing
 
 Feel free to contribute to anything.
+Please don't hesitate to submit issues and pull-requests against this project.
+
+1. **[Fork](https://github.com/steven7mwesigwa/java-how-to-program/fork)** the repository.
+    * This allows you to freely experiment with changes without affecting the original project. 
+2. Create your *feature* branch.
+    * i.e  (`git checkout -b feature/fooBar`)
+3. Commit your changes.
+    * i.e  (`git commit -am 'Add some fooBar'`)
+4. Push to the branch.
+    * i.e  (`git push origin feature/fooBar`)
+5. Create a new Pull Request. 
 
 Please read [CONTRIBUTING.md](https://github.com/steven7mwesigwa/java-how-to-program/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
@@ -182,13 +194,19 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Steven Mwesigwa** - *Initial work* - [Steven Mwesigwa](https://github.com/steven7mwesigwa)
+* **Steven Mwesigwa** - *Initial work* - **[Github](https://github.com/steven7mwesigwa)** - **[Twitter](https://twitter.com/steven7mwesigwa)**
+
 
 [//]: # "See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project."
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/steven7mwesigwa/java-how-to-program/blob/master/LICENSE) file for details
+
+## Release History
+* [v0.1.0-alpha.1](https://github.com/steven7mwesigwa/java-how-to-program/releases)
+    * This is the first Release for the Project. Currently on Chapter 3 - -…
+… Page 134 ------Title 3.6 (Optional) GUI and Graphics Case Study: Using Dialog Boxes
 
 ## Acknowledgments
 
