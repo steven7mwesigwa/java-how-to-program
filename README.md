@@ -29,65 +29,6 @@ What things you need to install *(the software)* and how to install them
 
 >* i.e For Netbeans users, Apache-Netbeans 9 or later: ``Tools > Java Platforms > Add Platform...``. After adding your desired *Java platform*, Right-click on your Project ``> Properties > Sources > Source/Binary Format: >`` then choose your desired *Java Platform* from the drop down list and SAVE. 
 
-## <a name="project-list"></a>List of Sub Projects
-
-* **Qn-1:** *(page109)*  2.18 (*Displaying Shapes with Asterisks*) Write an application that displays a box, an oval, an arrow and a diamond using asterisks ( * ), as follows:
-
-!["2.18-page109-drawing-shapes-java-how-to-program"](readmeImages/drawing-shapes-java-how-to-program-page109.png)
-
-
-**Soln-1:** 
-```
-chapter2.drawshapes.Main
-```
-* **Qn-2:** *(page114)* ``CASE STUDY.``  We present a case study on creating and using a simple, real-world bank account
-class— Account . Such a class should maintain as instance variables attributes such as its name
-and balance , and provide methods for tasks such as querying the balance ( getBalance ),
-making deposits that increase the balance ( deposit ) and making withdrawals that decrease
-the balance ( withdraw ). We’ll build the getBalance and deposit methods into the class in
-the chapter’s examples and you’ll add the withdraw method in the exercises.
-
-
-**Soln-2:** 
-```
-chapter3.bankaccount.AccountTest
-```
-
-* **Qn-3:** *(page134)* ``GUI and Graphics Case Study.`` *Displaying Text in a Dialog Box*. The programs presented thus far display output in the command window. Many apps use
-windows or dialog boxes (also called dialogs) to display output. Web browsers such as
-Chrome, Firefox, Internet Explorer, Safari and Opera display web pages in their own win-
-dows. E-mail programs allow you to type and read messages in a window. Typically, dialog
-boxes are windows in which programs display important messages to users. Class JOption-
-Pane provides prebuilt dialog boxes that enable programs to display windows containing
-messages—such windows are called message dialogs. Figure 3.12 displays the String
-"Welcome to Java" in a **message dialog**. 
-
-**Soln-3:** 
-
-```
-chapter3.create.graphical.user.interfaces.messagedialog.MessageDialog
-```
-
-!["3.12-page135-message-dialog-display-text-in-dialog-box-java-how-to-program"](readmeImages/message-dialog-display-text-in-dialog-box-java-how-to-program-page135.png)
-
-* **Qn-4:** *(page135)* ``GUI and Graphics Case Study.`` *Entering Text in a Dialog.* Figure 3.13 uses another predefined ``JOptionPane`` dialog called an **input dialog** that allows
-the user to enter data into a program. The program asks for the user’s name and responds
-with a message dialog containing a greeting and the name that the user entered.
-input-dialog-entering-text-in-a-dialog-java-how-to-program-page136.png
-
-
-**Soln-4:** 
-
-```
-chapter3.create.graphical.user.interfaces.inputdialog.InputDialog
-```
-
-!["3.13-page136-input-dialog-entering-text-in-a-dialog-java-how-to-program"](readmeImages/part-a-input-dialog-entering-text-in-a-dialog-java-how-to-program-page136.png)
-
-!["3.13-page136-input-dialog-entering-text-in-a-dialog-java-how-to-program"](readmeImages/part-b-input-dialog-entering-text-in-a-dialog-java-how-to-program-page136.png)
-
-* **Qn-5:** *COMING SOON!!*
-
 ## Installing (Deployment)
 A step by step series of examples that tell you how to get a development env running
 
@@ -109,13 +50,14 @@ git clone https://github.com/steven7mwesigwa/java-how-to-program.git
 	```bash
 	cd java-how-to-program/io/bitbucket/steven7mwesigwa/JavaHowToProgram/src/
 	```
+3. Check out this link of **[Sub Projects.](#project-list)**
 
  **OPTION 2:**
 
 For those of you who prefer to run these sub projects from the terminal, All hope is not lost.
 Follow the steps below to get you up and running:
 
->* **NOTE:** These steps are ***ONLY*** for those who don't want to change their default JDK version BUT still want to try out or play with these sub projects from the terminal. 
+>* **NOTE:** These steps below are ***ONLY*** for those who don't want to change their default JDK version BUT still want to try out or play with these sub projects from the terminal. 
 
 >* I will be using *Linux (debian)* as my Operating system BUT you should be able to follow along just fine.
 
@@ -163,12 +105,12 @@ The J2SE Platform is not correctly set up.
 
 
 	```bash
-	        <classpath>
-                 <pathelement location="build/*"/>
+	    <classpath>
+             <pathelement location="build/*"/>
         </classpath>
 	```
 
-> **NOTE:** If you don't specify a ``classpath`` for your built JAVA files, you will end up with a ``java.lang.NoClassDefFoundError:`` error."
+> **NOTE:** If you don't specify a ``classpath`` for your built JAVA files, you will end up with a ``java.lang.NoClassDefFoundError:`` error.
 
 
 5. CONGRATULATIONS!!. If you have made it this far, we are now ready to play with our sub projects.
@@ -204,7 +146,7 @@ jdk-10.0.2_linux-x64_bin/jdk-10.0.2/bin/java -cp build/classes chapter3.create.g
 
 
 *
-    * For more **PROJECTS** check the [**project list**](#project-list)
+    * For more **PROJECTS** check the **[project list.](#project-list)**
 
 [//]: # "2. Then change *'current working directory'* to the root of this project."
 
@@ -254,4 +196,63 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 [//]: # "* Hat tip to anyone whose code was used* Inspiration* etc"
 
+
+
+## <a name="project-list"></a>List of Sub Projects
+
+* **Qn-1:** *(page109)*  2.18 (*Displaying Shapes with Asterisks*) Write an application that displays a box, an oval, an arrow and a diamond using asterisks ( * ), as follows:
+
+!["2.18-page109-drawing-shapes-java-how-to-program"](readmeImages/drawing-shapes-java-how-to-program-page109.png)
+
+
+**Soln-1:** 
+```
+chapter2.drawshapes.Main
+```
+* **Qn-2:** *(page114)* ``CASE STUDY.``  We present a case study on creating and using a simple, real-world bank account
+class— Account . Such a class should maintain as instance variables attributes such as its name
+and balance , and provide methods for tasks such as querying the balance ( getBalance ),
+making deposits that increase the balance ( deposit ) and making withdrawals that decrease
+the balance ( withdraw ). We’ll build the getBalance and deposit methods into the class in
+the chapter’s examples and you’ll add the withdraw method in the exercises.
+
+
+**Soln-2:** 
+```
+chapter3.bankaccount.AccountTest
+```
+
+* **Qn-3:** *(page134)* ``GUI and Graphics Case Study.`` *Displaying Text in a Dialog Box*. The programs presented thus far display output in the command window. Many apps use
+windows or dialog boxes (also called dialogs) to display output. Web browsers such as
+Chrome, Firefox, Internet Explorer, Safari and Opera display web pages in their own win-
+dows. E-mail programs allow you to type and read messages in a window. Typically, dialog
+boxes are windows in which programs display important messages to users. Class JOption-
+Pane provides prebuilt dialog boxes that enable programs to display windows containing
+messages—such windows are called message dialogs. Figure 3.12 displays the String
+"Welcome to Java" in a **message dialog**. 
+
+**Soln-3:** 
+
+```
+chapter3.create.graphical.user.interfaces.messagedialog.MessageDialog
+```
+
+!["3.12-page135-message-dialog-display-text-in-dialog-box-java-how-to-program"](readmeImages/message-dialog-display-text-in-dialog-box-java-how-to-program-page135.png)
+
+* **Qn-4:** *(page135)* ``GUI and Graphics Case Study.`` *Entering Text in a Dialog.* Figure 3.13 uses another predefined ``JOptionPane`` dialog called an **input dialog** that allows
+the user to enter data into a program. The program asks for the user’s name and responds
+with a message dialog containing a greeting and the name that the user entered.
+
+
+**Soln-4:** 
+
+```
+chapter3.create.graphical.user.interfaces.inputdialog.InputDialog
+```
+
+!["3.13-page136-input-dialog-entering-text-in-a-dialog-java-how-to-program"](readmeImages/part-a-input-dialog-entering-text-in-a-dialog-java-how-to-program-page136.png)
+
+!["3.13-page136-input-dialog-entering-text-in-a-dialog-java-how-to-program"](readmeImages/part-b-input-dialog-entering-text-in-a-dialog-java-how-to-program-page136.png)
+
+* **Qn-5:** *COMING SOON!!*
 
