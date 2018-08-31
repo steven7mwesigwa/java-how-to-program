@@ -194,7 +194,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Steven Mwesigwa** - *Initial work* - **[Github](https://github.com/steven7mwesigwa)** - **[Twitter](https://twitter.com/steven7mwesigwa)**
+* **Steven Mwesigwa** - *Initial work* - **[Portfolio](https://steven7mwesigwa.github.io/)** - **[Twitter](https://twitter.com/steven7mwesigwa)**
 
 
 [//]: # "See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project."
