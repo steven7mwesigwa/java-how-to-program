@@ -68,7 +68,7 @@ Follow the steps below to get you up and running:
 	> * **NOTE:** Take note of this destination folder. As for me, i will extract it in my *"home directory"*. i.e i will end up with a ``~/jdk-10.0.2_linux-x64_bin`` folder AFTER unzipping. This is where our **JDK_v10** is located. We will need it when building with **``Ant build tool``**
 
 	```bash
-	tar -xf jdk-10.0.2_linux-x64_bin.tar.gz
+	tar xf jdk-10.0.2_linux-x64_bin.tar.gz
 	```` 
 
 2. Before we play with the project, we need a "Build tool" to make building easy.
